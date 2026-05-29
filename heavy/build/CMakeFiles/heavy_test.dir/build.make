@@ -92,7 +92,7 @@ heavy_test_EXTERNAL_OBJECTS =
 
 heavy_test: CMakeFiles/heavy_test.dir/src/main.cpp.o
 heavy_test: CMakeFiles/heavy_test.dir/build.make
-heavy_test: libheavy.so
+heavy_test: libheavy-0.0.1.so
 heavy_test: CMakeFiles/heavy_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspace/heavy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable heavy_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heavy_test.dir/link.txt --verbose=$(VERBOSE)
