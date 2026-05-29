@@ -18,7 +18,7 @@ jobs:
     
     - name: Create build directory
       run: cd heavy
-    
+      run: mkdir -p build
     - name: Configure CMake
       run: cd build && cmake ..
     
