@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(heavy VERSION 1.0.0 LANGUAGES CXX)
+project(heavy VERSION 0.0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -15,6 +15,7 @@ add_library(heavy SHARED
 
 target_compile_definitions(heavy PRIVATE HEAVY_BUILD)
 target_include_directories(heavy PUBLIC include)
+set_target_properties(heavy PROPERTIES OUTPUT_NAME "heavy-${PROJECT_VERSION}")
 
 add_executable(heavy_test
     src/main.cpp
