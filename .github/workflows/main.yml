@@ -18,6 +18,9 @@ jobs:
 
     - name: cd
       run: cd heavy
+
+    - name: second
+      run: cd heavy
       
     - name: ls
       run: ls
