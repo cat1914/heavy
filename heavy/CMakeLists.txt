@@ -6,13 +6,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
-add_library(heavy STATIC
+add_library(heavy SHARED
     src/Vector3.cpp
     src/Force.cpp
     src/PhysicsBody.cpp
     src/PhysicsWorld.cpp
 )
 
+target_compile_definitions(heavy PRIVATE HEAVY_BUILD)
 target_include_directories(heavy PUBLIC include)
 
 add_executable(heavy_test

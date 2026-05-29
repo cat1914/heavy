@@ -1,11 +1,12 @@
 #ifndef HEAVY_FORCE_H
 #define HEAVY_FORCE_H
 
+#include "Export.h"
 #include "Vector3.h"
 
 namespace heavy {
 
-class Force {
+class HEAVY_API Force {
 public:
     Vector3 gravity;
     Vector3 lift;

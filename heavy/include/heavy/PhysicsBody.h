@@ -1,11 +1,12 @@
 #ifndef HEAVY_PHYSICSBODY_H
 #define HEAVY_PHYSICSBODY_H
 
+#include "Export.h"
 #include "Vector3.h"
 
 namespace heavy {
 
-class PhysicsBody {
+class HEAVY_API PhysicsBody {
 public:
     Vector3 position;
     Vector3 velocity;

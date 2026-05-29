@@ -1,13 +1,14 @@
 #ifndef HEAVY_PHYSICSWORLD_H
 #define HEAVY_PHYSICSWORLD_H
 
+#include "Export.h"
 #include "PhysicsBody.h"
 #include "Force.h"
 #include <vector>
 
 namespace heavy {
 
-class PhysicsWorld {
+class HEAVY_API PhysicsWorld {
 private:
     std::vector<PhysicsBody*> bodies;
     Force globalForce;

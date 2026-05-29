@@ -1,15 +1,18 @@
 #ifndef HEAVY_VECTOR3_H
 #define HEAVY_VECTOR3_H
 
+#include "Export.h"
+
 namespace heavy {
 
-class Vector3 {
+class HEAVY_API Vector3 {
 public:
     float x, y, z;
 
     Vector3();
     Vector3(float x, float y, float z);
     
+    Vector3 operator-() const;
     Vector3 operator+(const Vector3& other) const;
     Vector3 operator-(const Vector3& other) const;
     Vector3 operator*(float scalar) const;
